@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Migración Venezolana en Chile">
+    <meta name="author" content="Monserrat Mella González">
+    <title>Migración</title>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Noto+Serif" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="estilo.css" rel="stylesheet">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Venezuela</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#primera">Primera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#segunda">Segunda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#tercera">Tercera</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col text-center">
+          	<h1>Venezuela</h1>
+          	<h2>Visualización de un Movimiento</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="primera">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 dataviz-primera"></div>
+          <div class="col-lg-6">
+          	<h3 class="mt-3">Migración por género</h3>
+            <p>Entre 2015 y 2016, el número de visas entregadas a inmigrantes provenientes de Venezuela ha crecido a una tasa anual del 65,4%. </p>
+          	<p>La mayoría de los inmigrantes que llegan desde Venezuela son de sexo Masculino. Esto ha sido la tendencia desde el año 2015, donde la mayoría era de sexo Femenino.</p>
+            <p>La mayoría de los inmigrantes provenientes desde Venezuela son personas en el rango de edad 30-64, seguidos de gente en el rango 25-29. Los primeros representan un 48,5% del total en 2016, lo cual se traduce en un cambio de 166,3% respecto al año 2015.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="segunda" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="mt-3">Migración por Gracia</h3>
+            <p>La mayoría de las visas entregadas en 2016 a inmigrantes provenientes desde Venezuela son para Permanencia Definitiva Por Gracia, y representan el 84,1% de todas las visas entregadas a inmigrantes de Venezuela. Favor revisa el siguiente link <a href="https://es.datachile.io/countries/america-19/venezuela-201">Para comprobar estos datos</a></p>
+            <p>En contraste, el 1,7% se declara sin educación formal, y el 32,1% no indica su nivel educacional..</p>
+            <p>Las visas más comunes entregadas en 2016 a inmigrantes de Venezuela son para Empleado (77,4%) y Estudiante (7,2%)</p>
+          </div>
+          <div class="col-lg-6 text-right dataviz-segunda"></div>
+        </div>
+      </div>
+    </section>
+    <section id="tercera">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 dataviz-tercera"></div>
+          <div class="col-lg-6">
+            <h3 class="mt-3">Migración por Rango Etario</h3>
+            <p>Si bien las motivaciones de la migración son multidimensionales, relativas a cada contexto de origen y siempre
+es riesgoso reducirlas a una causa, es posible señalar que la población migrante residente en Chile es
+inminentemente laboral </p>
+            <p>Esta apreciación se fundamenta principalmente en las tendencias etarias de los
+extranjeros en el país, donde el tramo entre 20 y 50 años representa el 65,5% del total de migrantes. </p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+      	<div class="row">
+      		<div class="col">
+		        <p class="small">Escrito por <a href="mailto:mail@mail.com">Monserrat Mella</a> | Seminario Gráfica Computacional I 2018, Primer Semestre</p>
+		        <ul class="list-inline small">
+		          <li class="list-inline-item">
+		            <a class="nav-link js-scroll-trigger" href="#primera">Migración por género</a>
+		          </li>
+		          <li class="list-inline-item">
+		            <a class="nav-link js-scroll-trigger" href="#segunda">Migración por Gracia</a>
+		          </li>
+		          <li class="list-inline-item">
+		            <a class="nav-link js-scroll-trigger" href="#tercera">Migración por Rango Etario</a>
+		          </li>
+		        </ul>
+      		</div>
+      	</div>
+      </div>
+    </footer>
+
+    <!-- Javascript de visualizaciones-->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="d3/primera.js"></script>
+	<script src="d3/segunda.js"></script>
+	<script src="d3/tercera.js"></script>
+    <!-- Javascript de Bootstrap -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+
+</html>
